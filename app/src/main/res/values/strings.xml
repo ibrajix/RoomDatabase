@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Room Database</string>
+    <string name="fill_your_information">Fill your information</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="age">Age</string>
+    <string name="save">Save</string>
+    <string name="hello_there">Hello there,</string>
+    <string name="here_are_your_details">Here are your details</string>
+    <string name="record_saved">Record saved successfully</string>
+    <string name="clear_record">Clear Record</string>
+</resources>
