@@ -62,12 +62,14 @@ class UserDetailsActivity : AppCompatActivity() {
             lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED){
 
                 userViewModel.doGetUserDetails()
-                userViewModel.userDetails.collect { user->
+                userViewModel.userDetails.collect { users->
 
-                    //set data into view
-                    binding.txtName.text = user.name
-                    binding.txtAge.text = user.age
-                    binding.txtNumber.text = user.number
+                    for (user in users){
+                        //set data into view
+                        binding.txtName.text = user.name
+                        binding.txtAge.text = user.age
+                        binding.txtNumber.text = user.number
+                    }
 
                 }
             }

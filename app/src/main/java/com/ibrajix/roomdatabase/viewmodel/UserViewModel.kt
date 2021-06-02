@@ -28,8 +28,8 @@ class UserViewModel @ViewModelInject constructor(private val userRepo: UserRepo)
      * Retrieve user details
      */
     //check if song is liked
-    private val _userDetails = MutableStateFlow(User(null))
-    val userDetails : StateFlow<User> =  _userDetails
+    private val _userDetails = MutableStateFlow<List<User>>(emptyList())
+    val userDetails : StateFlow<List<User>> =  _userDetails
 
     fun doGetUserDetails(){
         viewModelScope.launch(Dispatchers.IO) {

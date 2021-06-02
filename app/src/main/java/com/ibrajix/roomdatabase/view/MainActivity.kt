@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity() {
             val number = binding.etNumber.text.toString()
 
 
-            val user = User(name = name, age = age, number = number)
+            val user = User(id = 1, name = name, age = age, number = number)
 
             //save the details to room database
             userViewModel.insertUserDetails(user)
